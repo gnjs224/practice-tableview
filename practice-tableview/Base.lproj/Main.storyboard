@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="kMD-MX-5Zb">
-                            <rect key="frame" x="0.0" y="111" width="414" height="44"/>
+                            <rect key="frame" x="0.0" y="154.5" width="414" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="plain" title="Add Data"/>
@@ -42,14 +42,52 @@
                                     </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="customCell" id="uRD-W5-t1l" customClass="CustomTableViewCell" customModule="practice_tableview" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="93" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uRD-W5-t1l" id="Z4S-Il-PBn" customClass="CustomTableViewCell" customModule="practice_tableview" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mhD-qV-wKG">
+                                            <rect key="frame" x="20" y="11" width="42" height="21.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Mz-Uw-aDe">
+                                            <rect key="frame" x="352" y="11" width="42" height="21.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="6Mz-Uw-aDe" firstAttribute="top" secondItem="Z4S-Il-PBn" secondAttribute="topMargin" id="Uj2-ri-Jt6"/>
+                                        <constraint firstItem="6Mz-Uw-aDe" firstAttribute="bottom" secondItem="Z4S-Il-PBn" secondAttribute="bottomMargin" id="aI5-B6-6Br"/>
+                                        <constraint firstItem="mhD-qV-wKG" firstAttribute="top" secondItem="Z4S-Il-PBn" secondAttribute="topMargin" id="c9h-pc-WgL"/>
+                                        <constraint firstItem="mhD-qV-wKG" firstAttribute="leading" secondItem="Z4S-Il-PBn" secondAttribute="leadingMargin" id="ihw-ux-IGM"/>
+                                        <constraint firstItem="6Mz-Uw-aDe" firstAttribute="trailing" secondItem="Z4S-Il-PBn" secondAttribute="trailingMargin" id="tMl-UH-hL3"/>
+                                        <constraint firstItem="mhD-qV-wKG" firstAttribute="bottom" secondItem="Z4S-Il-PBn" secondAttribute="bottomMargin" id="xTK-SZ-mj8"/>
+                                    </constraints>
+                                    <connections>
+                                        <outlet property="leftLabel" destination="mhD-qV-wKG" id="Qck-5e-x6u"/>
+                                        <outlet property="rightLabel" destination="6Mz-Uw-aDe" id="mr4-29-fdN"/>
+                                    </connections>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="leftLabel" destination="mhD-qV-wKG" id="LjM-eX-ivH"/>
+                                    <outlet property="rightLabel" destination="6Mz-Uw-aDe" id="iDl-JI-Kkm"/>
+                                </connections>
+                            </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="BYZ-38-t0r" id="NLL-cD-ioZ"/>
-                            <outlet property="delegate" destination="BYZ-38-t0r" id="rUn-TS-EfQ"/>
+                            <outlet property="dataSource" destination="BYZ-38-t0r" id="XWB-wl-hWy"/>
+                            <outlet property="delegate" destination="BYZ-38-t0r" id="Xy4-Fs-o8d"/>
                         </connections>
                     </tableView>
                     <connections>
-                        <outlet property="tableView" destination="PmO-Tr-VVZ" id="V3k-68-bfo"/>
+                        <outlet property="tableView" destination="PmO-Tr-VVZ" id="nUX-nd-ekU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
