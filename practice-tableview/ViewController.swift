@@ -48,14 +48,20 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
             let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: self.cellIdentifier, for: indexPath)
             let text: String = indexPath.section == 0 ? korean[indexPath.row] : english[indexPath.row]
             cell.textLabel?.text = text
+            if indexPath.row == 1{
+                cell.backgroundColor = UIColor.red
+            }else{
+                cell.backgroundColor = UIColor.white
+            }
             return cell
         }else{
             let cell: CustomTableViewCell = tableView.dequeueReusableCell(withIdentifier: self.customCellIdentifier, for: indexPath) as! CustomTableViewCell
             cell.leftLabel.text = self.dateFormatter.string(from:self.dates[indexPath.row])
             cell.rightLabel.text = self.timeFormatter.string(from: self.dates[indexPath.row])
-
+           
             return cell
         }
+        
     }
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         if section < 2{
@@ -69,5 +75,26 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
 //        self.tableView.reloadData()
         self.tableView.reloadSections(IndexSet(2...2), with: UITableView.RowAnimation.automatic)
     }
+    
+    
+        // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let nextVC: SecondViewController =
+        segue.destination as? SecondViewController
+        else{
+             return
+        }
+        guard let cell: UITableViewCell = sender as? UITableViewCell else{
+            return
+        }
+        nextVC.textToSet = cell.textLabel?.text
+        
+        
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+    }
+    
 }
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7803A67A2799409400E41CC8 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7803A6792799409400E41CC8 /* SecondViewController.swift */; };
 		7818958F2794FBAE0055F9FE /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7818958E2794FBAE0055F9FE /* CustomTableViewCell.swift */; };
 		78918788278E9830001B8A7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78918787278E9830001B8A7B /* AppDelegate.swift */; };
 		7891878A278E9830001B8A7B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78918789278E9830001B8A7B /* SceneDelegate.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7803A6792799409400E41CC8 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		7818958E2794FBAE0055F9FE /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		78918784278E9830001B8A7B /* practice-tableview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "practice-tableview.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		78918787278E9830001B8A7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				78918789278E9830001B8A7B /* SceneDelegate.swift */,
 				7891878B278E9830001B8A7B /* ViewController.swift */,
 				7891878D278E9830001B8A7B /* Main.storyboard */,
+				7803A6792799409400E41CC8 /* SecondViewController.swift */,
 				7818958E2794FBAE0055F9FE /* CustomTableViewCell.swift */,
 				78918790278E9831001B8A7B /* Assets.xcassets */,
 				78918792278E9831001B8A7B /* LaunchScreen.storyboard */,
@@ -144,6 +147,7 @@
 				7891878C278E9830001B8A7B /* ViewController.swift in Sources */,
 				78918788278E9830001B8A7B /* AppDelegate.swift in Sources */,
 				7818958F2794FBAE0055F9FE /* CustomTableViewCell.swift in Sources */,
+				7803A67A2799409400E41CC8 /* SecondViewController.swift in Sources */,
 				7891878A278E9830001B8A7B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
